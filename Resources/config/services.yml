@@ -1,0 +1,16 @@
+parameters:
+  maspyma_usuarios.login_template: %usuarios.login_template%
+
+services:
+    maspyma.logout_success_handler:
+        class:     Maspyma\UsuariosBundle\Handler\LogoutSuccessHandler
+        arguments:     ["@router", "@maspyma.global_data"]
+
+    maspyma.access_denied_handler:
+        class:     Maspyma\UsuariosBundle\Handler\AccessDeniedHandler
+        arguments:     ["@session", "@router", "@maspyma.global_data"]
+        tags:
+            - { name: kernel.event_listener, event: security.kernel_response, method: handle}
+    maspyma.global_data:
+        class: Maspyma\UsuariosBundle\Services\GlobalDataService
+        arguments: [@service_container]            

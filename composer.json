@@ -1,0 +1,38 @@
+{
+	"name" : "maspyma/usuarios",
+	"type" : "symfony-bundle",
+	"description" : "Bundle de Usuarios MASPyMA, con autenticación por LDAP a la Intranet Provincial",
+	"keywords" : [
+		"Twig",
+		"HTML5",
+		"CSS3",
+		"jQuery-UI",
+		"Bootstrap",
+		"Responsive",
+		"STG",
+		"jQuery"
+	],
+	"homepage" : "http://www.santafe.gov.ar/assets",
+	"authors" : [{
+			"name" : "Gerold, Lourdes",
+			"homepage" : "http://www.santafe.gov.ar",
+			"email" : "lgerold@santafe.gov.ar"
+		}, {
+			"name" : "Deré, Julio",
+			"homepage" : "http://www.santafe.gov.ar",
+			"email" : "jdere@santafe.gov.ar"
+		}
+	],
+	"require" : {
+		"php" : ">=5.3.3",
+        "symfony/framework-bundle": "~2.3",
+        "symfony/security-bundle":  "~2.3",
+        "stg/ldap-authentication-bundle": "0.*"
+	},
+	"autoload" : {
+		"psr-0" : {
+			"Maspyma\\UsuariosBundle" : ""
+		}
+	},
+	"target-dir" : "Maspyma/UsuariosBundle"
+}

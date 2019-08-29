@@ -1,0 +1,6 @@
+"Bad credentials": "Usuario o Contraseña incorrectos."
+"The presented password is invalid": "La contraseña no es válida"
+"The credentials were changed from another session": "Las credenciales fueron cambiadas. Inicie sesión nuevamente"
+"The presented password cannot be empty": "La contraseña no puede estar vacía"
+"Your session has timed out, or you have disabled cookies.": "La sesión ha expirado, o las cookies están desactivadas."
+"Could not connect to host": "Error de conexión con el servidor."
