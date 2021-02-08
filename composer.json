@@ -24,9 +24,9 @@
 		}
 	],
 	"require" : {
-		"php" : ">=5.3.3",
-        "symfony/framework-bundle": "~2.3",
-        "symfony/security-bundle":  "~2.3",
+        "php": ">=5.5.9",
+        "symfony/symfony": "3.4.*",
+        "symfony/security-bundle":  "3.4.*",
         "stg/ldap-authentication-bundle": "0.*"
 	},
 	"autoload" : {
