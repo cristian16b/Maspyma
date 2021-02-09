@@ -25,8 +25,7 @@
 	],
 	"require" : {
         "php": ">=5.5.9",
-        "symfony/symfony": "3.4.*",
-        "stg/ldap-authentication-bundle": "0.0.2"
+        "symfony/symfony": "3.4.*"
 	},
 	"autoload" : {
 		"psr-0" : {
