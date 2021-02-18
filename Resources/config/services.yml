@@ -1,5 +1,5 @@
 parameters:
-  maspyma_usuarios.login_template: %usuarios.login_template%
+  maspyma_usuarios.login_template: '%usuarios.login_template%'
 
 services:
     maspyma.logout_success_handler:
@@ -13,4 +13,4 @@ services:
             - { name: kernel.event_listener, event: security.kernel_response, method: handle}
     maspyma.global_data:
         class: Maspyma\UsuariosBundle\Services\GlobalDataService
-        arguments: [@service_container]            
+        arguments: ["@service_container"]            
